@@ -1,48 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Grocery</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <nav class="navigation-grocery">
-        <img src="your-logo.png" alt="logo" class="logo">
-        <ul class="navigation-items">
-            <li>Home</li>
-            <li>Our Product</li>
-            <li>Contact Us</li>
-        </ul>
-    </nav>
-    <header>
-        <h1>Hello Welcome to E-Grocery Site</h1>
-        <hd>This is for practice</hd>
-        <img src="assets/header.jpg" alt="header">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>GroceLink | Belanja Jadi Lebih Mudah</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav__bar">
+          <div class="nav__header">
+            <div class="nav__logo">
+              <a href="#">Groce<span>Link</span></a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+              <span><i class="ri-menu-3-line"></i></span>
+            </div>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li class="link"><a href="#home">Home</a></li>
+            <li class="link"><a href="#service">Our Package</a></li>
+            <li class="link"><a href="#contact">Call Us</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <div class="header__image">
+          <img src="assets/grocery-bag.webp" alt="header" />
+        </div>
+        <div class="header__content">
+          <h4>Everyday with best ingredients.</h4>
+          <h1>Top Rated <span>E-Groceries</span> Shop in Indonesia</h1>
+          <button class="btn">Read more</button>
+        </div>
+      </div>
     </header>
-    <div class="our-product">
-        <div>
-            <div class="circle" style="background-image: url('assets/header.jpg');"></div>
-            <p>Terdiri dari sayuran dan buah2an</p>
-        </div>
-        <div>
-            <div class="circle"></div>
-            <p>Terdiri dari sayuran dan buah2an</p>
-        </div>
-        <div>
-            <div class="circle"></div>
-            <p>Terdiri dari sayuran dan buah2an</p>
-        </div>
-    </div>
 
-    <div class="inquiry-customer">
-        <form class="inquiry-form">
-            <label for="name">Name</label>
-            <input type="text" id="name">
-        </form>
-        <div class="output">
-            <!-- put your -->
+    <section class="section__container about__container" id="about">
+      <div class="about__image">
+        <img src="assets/about.png" alt="about" />
+      </div>
+      <div class="about__content">
+        <h2 class="section__header">Welcome to <span class="green">Groce</span><span class="red">Link</span>!</h2>
+        <p>
+          GroceLink adalah platform belanja online yang didedikasikan
+          untuk memudahkan Anda dalam mendapatkan semua kebutuhan sehari-hari
+          dengan mudah dan cepat. Dari bahan makanan hingga perlengkapan rumah tangga,
+          GroceLink memiliki semua yang Anda butuhkan dalam satu tempat.
+        </p>
+        <h4>
+        Terima kasih telah memilih GroceLink sebagai mitra belanja Anda.
+        Selamat berbelanja!
+        </h4>
+        <div class="about__btns">
+          <a href="#" class="btn">
+            Read more
+          </a>
         </div>
-    </div>
-</body>
+      </div>
+    </section>
+
+    <section class="section__container blog__container" id="blog">
+      <p class="section__subheader">Trending</p>
+      <h2 class="section__header">Our Products</h2>
+      <div class="blog__grid">
+        <div class="blog__card">
+          <img src="assets/blog-1.png" alt="blog" />
+          <p>Rp6.000,- / ikat</p>
+          <h4>Kangkung</h4>
+          <a href="#">Order</a>
+        </div>
+        <div class="blog__card">
+          <img src="assets/blog-2.jpg" alt="blog" />
+          <p>Rp15.000,- / packs (250gr)</p>
+          <h4>Strawberry</h4>
+          <a href="#">Order</a>
+        </div>
+        <div class="blog__card">
+          <img src="assets/blog-3.jpg" alt="blog" />
+          <p>Rp6.000,- / 100gr</p>
+          <h4>Kencur</h4>
+          <a href="#">Order</a>
+        </div>
+        <div class="blog__card">
+          <img src="assets/blog-4.jpg" alt="blog" />
+          <p>Rp8.000,- / packs</p>
+          <h4>Sayur Sop</h4>
+          <a href="#">Order</a>
+        </div>
+        <div class="blog__card">
+          <img src="assets/blog-5.jpg" alt="blog" />
+          <p>Rp146.000,- / packs</p>
+          <h4>Teflon</h4>
+          <a href="#">Order</a>
+        </div>
+        <div class="blog__card">
+          <img src="assets/blog-6.jpg" alt="blog" />
+          <p>Rp16.000,- / set</p>
+          <h4>Tempat Bumbu Dapur</h4>
+          <a href="#">Order</a>
+        </div>
+      </div>
+      <div class="more__btns">
+        <a href="#" class="btn">
+          More
+        </a>
+      </div>
+    </section>
+
+    <section class="section__container service__container" id="service">
+      <p class="section__subheader">Our Package</p>
+      <h2 class="section__header">What We Do?</h2>
+      <p class="section__description">
+        Di paket Grocelink, Anda dapat mengakses berbagai produk dan
+        layanan yang dirancang untuk memenuhi kebutuhan belanja harian Anda.
+      </p>
+      <div class="service__grid">
+        <div class="service__card">
+          <span><i class="ri-window-fill"></i></span>
+          <h4>Fresh Vegetable</h4>
+          <p>
+            Sayuran segar langsung dari sumber pertanian terbaik.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-store-line"></i></span>
+          <h4>Fresh Fruit</h4>
+          <p>
+            Buah dengan kualitas terbaik dari local atau import
+            dan harga yang menarik.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-smartphone-line"></i></span>
+          <h4>Instant Delivery</h4>
+          <p>
+            Dikirim instan oleh kurir yang telah ditraining dengan
+            SOP untuk menjaga kondisi belanja Anda.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-share-fill"></i></span>
+          <h4>Kitchen Ingredient</h4>
+          <p>
+            Bumbu dapur lengkap untuk keperluan memasak Anda.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-seo-line"></i></span>
+          <h4>Kitchen Set</h4>
+          <p>
+            Segala jenis alat masak untuk membantu Anda memasak.
+          </p>
+        </div>
+        <div class="service__card">
+          <span><i class="ri-share-circle-line"></i></span>
+          <h4>Bunding Set</h4>
+          <p>
+            Bingung masak apa? Sudah tersedia paket untuk masak di Anda.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container client__container" id="client">
+      <p class="section__subheader">Testimonials</p>
+      <h2 class="section__header">What Our Clients Say About Us</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="assets/client-1.jpg" alt="client" />
+              <div>
+                <p>
+                  "Setiap hari beli sayur buah yang fresh disini"
+                </p>
+                <h4>Florence Hughes <span>Ibu Rumah Tangga, 28</span></h4>
+                <div class="client__ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-half-fill"></i></span>
+                  <span><i class="ri-star-line"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="assets/client-2.jpg" alt="client" />
+              <div>
+                <p>
+                  "Saya bisa memesan tanpa harus meninggalkan kampus."
+                </p>
+                <h4>Andrew Smith<span>Student, 20</span></h4>
+                <div class="client__ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-line"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="assets/client-3.jpg" alt="client" />
+              <div>
+                <p>
+                  "Grocelink adalah solusi terbaik untuk berbelanja online."
+                </p>
+                <h4>Sophia Rodriguez <span>Profesional Kantoran, 33</span></h4>
+                <div class="client__ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-half-fill"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <img src="assets/client-4.jpg" alt="client" />
+              <div>
+                <p>
+                  "GroceLink membantu menghemat waktu saya dalam belanja."
+                </p>
+                <h4>Liam Johnson <span>Pengusaha, 41</span></h4>
+                <div class="client__ratings">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="section__container project__container" id="project">
+      <div class="project__header">
+        <h2 class="section__header">Our Blogs</h2>
+        <div class="project__nav">
+          <button
+            class="btn project__btn mixitup-control-active"
+            data-filter="all"
+          >
+            All
+          </button>
+          <button class="btn project__btn" data-filter=".web">Shopping Tips</button>
+          <button class="btn project__btn" data-filter=".game">Healthy Food</button>
+          <button class="btn project__btn" data-filter=".design">
+            Local Food
+          </button>
+        </div>
+      </div>
+      <div class="project__grid">
+        <div class="project__card mix web">
+          <img src="assets/project-1.jpg" alt="project" />
+        </div>
+        <div class="project__card mix game">
+          <img src="assets/project-2.jpg" alt="project" />
+        </div>
+        <div class="project__card mix design">
+          <img src="assets/project-3.jpg" alt="project" />
+        </div>
+        <div class="project__card mix web">
+          <img src="assets/project-4.jpg" alt="project" />
+        </div>
+        <div class="project__card mix game">
+          <img src="assets/project-5.jpg" alt="project" />
+        </div>
+        <div class="project__card mix design">
+          <img src="assets/project-6.jpg" alt="project" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container contact__container" id="contact">
+      <h2 class="section__header">Contact Us</h2>
+      <p class="section__subheader">
+        Sales akan menghubungi Anda 1x24 jam
+        setelah data kami terima.
+      </p>
+      <form action="/" class="contact__form">
+        <label for="name">Your Name</label>
+        <div class="input__row">
+          <input type="text" placeholder="First and last name" />
+        </div>
+        <label for="email">Email Address</label>
+        <input type="text" placeholder="example@email.com" />
+        <label for="interested">What are you interested in?</label>
+        <select id="interested" name="interested">
+          <option disabled selected>Select option</option>
+          <option value="Vegetable">Vegetable</option>
+          <option value="fruit">Fruit</option>
+          <option value="bumbu">Kitchen Ingredient</option>
+        </select>
+        <button class="btn">Send</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h5><a href="#">Perjalanan <span class="green">Groce</span><span class="red">Link</span></a></h5>
+          <p>
+            GroceLink dibuat oleh Rahulia Kristanti pada tahun 2024.
+            Sebuah platform yang dirancang dengan penuh dedikasi untuk memberikan
+            kemudahan belanja. Ingin tahu lebih banyak tentang pendiri dan
+            bagaimana GroceLink tercipta? Klik di sini untuk mengetahui informasi lebih lanjut.
+          </p>
+          <div class="footer__socials">
+            <a href="mailto:rahuliakristanti08@gmail.com"><i class="ri-mail-fill"></i></a>
+            <a href="https://github.com/rahuliakristanti"><i class="ri-github-fill"></i></a>
+            <a href="https://www.linkedin.com/in/rahulia-kristanti/"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 GroceLink - Rahulia Kristanti. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/scipt.js"></script>
+  </body>
 </html>
