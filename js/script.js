@@ -54,7 +54,7 @@ ScrollReveal().reveal(".header__content p", {
 
 ScrollReveal().reveal(".header__content .btn", {
   ...scrollRevealOption,
-  delay: 1100,
+  delay: 1300,
 });
 
 // about container
