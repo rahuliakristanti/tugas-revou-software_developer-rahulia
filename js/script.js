@@ -39,22 +39,22 @@ ScrollReveal().reveal(".header__image img", {
 
 ScrollReveal().reveal(".header__content h4", {
   ...scrollRevealOption,
-  delay: 500,
+  delay: 300,
 });
 
 ScrollReveal().reveal(".header__content h1", {
   ...scrollRevealOption,
-  delay: 1000,
+  delay: 500,
 });
 
 ScrollReveal().reveal(".header__content p", {
   ...scrollRevealOption,
-  delay: 1500,
+  delay: 1000,
 });
 
 ScrollReveal().reveal(".header__content .btn", {
   ...scrollRevealOption,
-  delay: 2000,
+  delay: 1100,
 });
 
 // about container
@@ -65,22 +65,22 @@ ScrollReveal().reveal(".about__image img", {
 
 ScrollReveal().reveal(".about__content .section__header", {
   ...scrollRevealOption,
-  delay: 500,
+  delay: 300,
 });
 
 ScrollReveal().reveal(".about__content p", {
   ...scrollRevealOption,
-  delay: 1000,
+  delay: 500,
 });
 
 ScrollReveal().reveal(".about__content h4", {
   ...scrollRevealOption,
-  delay: 1500,
+  delay: 1000,
 });
 
 ScrollReveal().reveal(".about__btns", {
   ...scrollRevealOption,
-  delay: 2000,
+  delay: 1500,
 });
 
 // service container

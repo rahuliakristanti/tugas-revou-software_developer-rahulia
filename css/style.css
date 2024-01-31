@@ -519,7 +519,7 @@ nav {
 }
 
 .footer {
-  background-color: white;
+  background-color: rgb(193, 0, 0);
 }
 
 .footer__col {
@@ -535,17 +535,10 @@ nav {
   font-weight: bold;
 }
 
-.footer__col .green {
-  color: #03583F;
-}
-
-.footer__col .red {
-  color: rgb(193, 0, 0);
-}
 
 .footer__col p {
   margin-bottom: 1.5rem;
-  color: black;
+  color: white;
   font-size: 18px;
   font-weight: 500;
   width: 800px;
@@ -558,72 +551,149 @@ nav {
   background-color: transparent;
   border-radius: 100%;
   transition: 0.3s;
-  color: #03583F;
+  color: black;
 }
 
 .footer__socials a:hover {
   color: white;
-  background: rgb(193, 0, 0);
+  background: black;
   border: none;
 }
 
 .footer__bar {
   padding: 1rem;
   font-size: 0.8rem;
-  color: var(--text-light);
+  color: white;
   text-align: center;
-  font-weight: bold;
+  font-weight: 100;
 }
 
-@media (width > 480px) {
-  .banner__container {
-    grid-template-columns: repeat(2, 1fr);
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .more__btns {
+    margin-top: 2rem;
+    text-align: left;
+  }
+  
+  .section__header {
+    font-size: 2rem;
   }
 
-  .project__grid {
-    grid-template-columns: repeat(2, 1fr);
+  .section__subheader {
+    font-size: 1rem;
   }
 
-  .service__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem 1rem;
+  .section__description {
+    max-width: 90%;
+  }
+
+  .header__container {
+    padding-top: 8rem;
+    gap: 2rem;
+  }
+
+  .header__image img {
+    max-width: 300px;
+    margin-top: -50px;
+  }
+
+  .header__content h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .about__content p {
+    font-size: 16px;
   }
 
   .blog__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .more__btns {
-    text-align: center;
-    margin-top: 50px;
+  .project__nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
   }
 
-  .more__btns .btn {
-    padding: 0.5rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 5rem;
-  }
-
-  .contact__form .input__row {
-    flex-direction: row;
-  }
-
-  .footer__container {
+  .project__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .footer__col:first-child {
-    text-align: center;
+  .contact__form {
+    max-width: 90%;
   }
 
   .footer__col p {
-    width: auto;
+    width: 80%;
+    text-align: center;
   }
 }
 
-@media (width > 768px) {
-  .header__socials {
-    display: flex;
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .more__btns {
+    margin-top: 2rem;
+    text-align: left;
+  }
+  .nav__links {
+    top: 88px;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .header__container {
+    padding-top: 8rem;
+    gap: 2rem;
+  }
+
+  .header__image img {
+    max-width: 350px;
+    margin-top: -50px;
+  }
+
+  .header__content h1 {
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+  }
+
+  .about__container {
+    gap: 2rem;
+  }
+
+  .banner__container {
+    gap: 1rem;
+  }
+
+  .project__grid,
+  .service__grid,
+  .blog__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .client__card {
+    max-width: 500px;
+  }
+
+  .footer__col p {
+    width: 100%;
+  }
+
+  .footer__col p {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .more__btns {
+    margin-top: 2rem;
+    text-align: left;
+  }
+
+  .header__image img {
+    max-width: 450px;
+    margin: auto;
+    margin-top: -100px;
   }
 
   nav {
@@ -670,59 +740,36 @@ nav {
     gap: 2rem;
   }
 
-  .banner__container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .project__header {
-    flex-direction: row;
-  }
-
-  .project__grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .service__grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .client__card {
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-  }
-
-  .blog__grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .more__btns {
+  .footer__col p {
+    width: 80%;
     text-align: center;
-    margin-top: 50px;
   }
-
-  .more__btns .btn {
-    padding: 0.5rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 5rem;
-  }
-
 }
 
-@media (width > 1024px) {
+@media only screen and (min-width: 1024px) {
+
+  .header__content h1 {
+    font-size: 2.9rem;
+    line-height: 4rem;
+  }
+
+  .about__container {
+    gap: 4rem;
+  }
+
   .banner__container {
     gap: 2rem;
   }
 
-  .project__grid {
-    gap: 2rem;
-  }
-
-  .service__grid {
-    gap: 2rem;
-  }
-
+  .project__grid,
+  .service__grid,
   .blog__grid {
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer__col p {
+    width: 80%;
+    text-align: center;
   }
 }
+
