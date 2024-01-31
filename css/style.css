@@ -769,7 +769,6 @@ nav {
 
   .footer__col p {
     width: 80%;
-    text-align: center;
+    text-align: right;
   }
 }
-
